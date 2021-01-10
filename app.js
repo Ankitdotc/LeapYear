@@ -1,13 +1,14 @@
 
 var sections = document.querySelectorAll('.section');
 
+
 var continueBtn=document.querySelector('#continueBtn');
 
 var checkBtn=document.querySelector('#checkBtn');
 
 var inputName=document.querySelector('#inputName');
 
-var userNameDOM = document.querySelector('#userName');
+var userName = document.querySelector('#userName');
 
 var inputDate=document.querySelector('#inputDate');
 
@@ -16,7 +17,7 @@ var output = document.querySelector('#output');
 var monthDays=[31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 var leapYearMessage="Your birth year is a leap year!";
 var notLeapYearMessage ="Your birth year is not a leap year!"
-var error= "Enter a valid date in the format DD/MM/YYYY";
+var error= "Please Enter a valid date and  in the format DD/MM/YYYY only";
 
 
 
@@ -26,11 +27,11 @@ checkBtn.addEventListener('click', checkBtnHandler);
 function continueBtnHandler(){
     if(inputName.value)
     {
-    var userNameJS= inputName.value;
+    var userDisplay= inputName.value;
     sections[0].style.display="none";
     sections[1].style.display="block";
-    userNameDOM.innerText= userNameJS;
-    console.log(userNameJS);
+    userName.innerText= userDisplay;
+    console.log(userDisplay);
     }
     else{
         alert("Please enter your name and then click on Continue");
@@ -98,4 +99,3 @@ function isLeapYear(Year){
     }
     return false;
 }
-f

@@ -1,18 +1,33 @@
 body{
-    background-image: url('/Images/undraw_happy_birthday_s72n.svg');
+    background-color :teal;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    min-height: 100vh;
+    
 }
-*{
-    font-family: 'Architects Daughter', cursive;
-    font-size: 1.1rem;
 
-}
 h1{
 font-size: 1.5rem;
-font-weight: lighter;
+
+}
+
+
+
+
+#leap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section1{
+    
+   
+    
+    padding: 3.5rem;
+    margin: auto;
+    text-align: center;
 }
 span{
     font-size: 1.5rem;
@@ -22,42 +37,26 @@ span{
     display: none;
 }
 
-#flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.section{
-    
-    /* height: 200px; */
-    max-width: 600px;
-    width: 100%;
-    padding: 2.5rem;
-    /* margin: auto; */
-    text-align: center;
-}
-
-.box{
-    box-sizing: border-box;
+.check{
+ 
     width: 100%;
     min-height: 50px;
-    padding: 0.6rem;
+    padding: 1rem;
     background-color: lightblue;
     
 }
 
-input.box{
+input.check{
     display: block;
-    margin: 0;
+    margin: auto;
     border: none;
 }
 
 button{
+    background-color:burlywood;
     display: block;
     margin: 1rem auto;
     padding: 0.5rem 1rem;
-    border: solid 4px lightblue;
-    background-color: rgb(231, 86, 110);
+    border: solid 4px ;
+    
 }
